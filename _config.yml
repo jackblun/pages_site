@@ -1,0 +1,4 @@
+title: Jack Blundell's github pages
+theme: minima
+plugins:
+  - jekyll-feed
