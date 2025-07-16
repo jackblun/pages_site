@@ -40,7 +40,7 @@ To assess 'similarity' here, we need a measure of distance. I use **Euclidian di
 
 The true simulated treatment effect is 1 unit. The figure below plots the treatment effect estimates for the 1,000 simulations.
 
-![Treatment Effects](assets/images/treatment_effects.png)
+![Treatment Effects]({{ site.baseurl }}/assets/images/treatment_effects.png)
 
 This shows:
 - Both methods are **unbiased**, as they are centred at the true effect (1).
@@ -50,7 +50,7 @@ This shows:
 
 The above evidence looks pretty good for rerandomisation. However, things get more complicated when we look at inference, i.e. how we estimate the **uncertainty of our treatment effect estimates**. First, let's look at the estimated standard errors:
 
-![Standard Errors](assets/images/standard_errors.png)
+![Standard Errors]({{ site.baseurl }}/assets/images/standard_errors.png)
 
 Above, we observed that true standard errors of treatment effect estimates are lower under rerandomisation, but here we see that **estimated standard errors are actually marginally (0.7%) higher under rerandomisation**. Why is this?
 
@@ -64,7 +64,7 @@ We can do this again via an identical simulation exercise, but this time we won'
 
 In the below figure I plot the distribution of t-values for the baseline (no rerandomisation) and the rerandomisation alternative against a standard normal distribution.
 
-![T-values](assets/images/t_stats.png)
+![T-values]({{ site.baseurl }}/assets/images/t_stats.png)
 
 The baseline is well-aligned with the standard normal, as we would expect given the plain vanilla setup. However, the rerandomised t-values exhibit lower variance than the standard normal. This is because the **standard error estimates are not reflecting the increased precision** obtained via rerandomisation. In fact, as shown above they are going in the opposite direction.
 
