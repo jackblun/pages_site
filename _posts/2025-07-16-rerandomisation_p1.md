@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Is it okay to rerandomise when running an experiment?"
-
 ---
 
 TL;DR - When running an experiment, sometimes we get unlucky and end up with imbalanced groups. Ensuring balance via **rerandomisation can lead to more precise estimates**. However, unless we account for this in standard error calculations, our **inference will be invalid**, and will infact lead to lower estimated precision.
